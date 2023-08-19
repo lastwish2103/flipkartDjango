@@ -28,10 +28,8 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-CORS_ORIGIN_WHITELIST = [
-    'http://localhost:3000',  # Replace with your React app's origin
-    'https://nayan-flipkartgrid.netlify.app',  # Replace with your React app's origin
-]
+
+
 
 
 ROOT_URLCONF = 'flipkartBackend.urls'
@@ -52,6 +50,10 @@ TEMPLATES = [
     },
 ]
 
+CORS_ORIGIN_WHITELIST = [
+    'http://localhost:3000',
+    'https://nayan-flipkartgrid.netlify.app',
+]
 WSGI_APPLICATION = 'flipkartBackend.wsgi.application'
 
 AUTH_PASSWORD_VALIDATORS = [
