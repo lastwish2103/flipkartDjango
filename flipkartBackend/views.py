@@ -3,9 +3,9 @@ import pandas as pd
 import numpy as np
 from flipkartBackend.settings import BASE_DIR
 from pymongo import MongoClient
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 import os
-load_dotenv()
+# load_dotenv()
 
 db=MongoClient(os.environ.get("CONNECTION_URI")).get_database("flipkart")
 
