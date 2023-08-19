@@ -5,7 +5,7 @@ from flipkartBackend.settings import BASE_DIR
 from pymongo import MongoClient
 from dotenv import load_dotenv
 import os
-load_dotenv(f"{BASE_DIR}/.env")
+load_dotenv()
 
 db=MongoClient(os.environ.get("CONNECTION_URI")).get_database("flipkart")
 
